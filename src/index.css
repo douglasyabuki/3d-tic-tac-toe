@@ -14,22 +14,29 @@ body::-webkit-scrollbar {
 }
 
 .container {
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
+  perspective: 10000px;
+  margin: 0 auto;
+}
+
+.great-container {
+  width: 800px;
+  height: 800px;
   perspective: 500px;
   margin: 100px;
 }
 
 .cube {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   transform-style: preserve-3d;
 }
 
-.face {
-  width: 200px;
-  height: 200px;
+.board-face {
+  width: 400px;
+  height: 400px;
   background: skyblue;
   border: 2px solid black;
   position: absolute;
@@ -40,3 +47,32 @@ body::-webkit-scrollbar {
   font-family: Arial, sans-serif;
   font-size: 2rem;
 }
+
+.top-bottom-face {
+  width: 400px;
+  height: 100px;
+  background: skyblue;
+  border: 2px solid black;
+  position: absolute;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+}
+
+.right-left-face {
+  width: 100px;
+  height: 400px;
+  background: skyblue;
+  border: 2px solid black;
+  position: absolute;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+}
+
